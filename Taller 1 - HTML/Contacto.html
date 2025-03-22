@@ -8,25 +8,41 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            text-align: center;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
         }
         header, footer {
-            background-color: #333;
+            background-color: #444;
             color: white;
+            text-align: center;
             padding: 15px;
         }
+        nav {
+            background: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
+        }
         .container {
-            max-width: 600px;
+            padding: 20px;
+            max-width: 800px;
             margin: auto;
+        }
+        form {
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        form {
-            text-align: left;
         }
         label {
             font-weight: bold;
@@ -42,18 +58,20 @@
         }
         .button {
             display: inline-block;
-            background-color: #007BFF;
-            color: white;
+            margin-top: 20px;
             padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
+            background: #666;
+            color: white;
             text-decoration: none;
-            font-size: 16px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            text-align: center;
+            border: none;
+            cursor: pointer;
         }
         .button:hover {
-            background-color: #0056b3;
+            background: #444;
         }
     </style>
 </head>
@@ -61,6 +79,19 @@
     <header>
         <h1>Contacto y Comunidad</h1>
     </header>
+    
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="calentamiento.html">Calentamiento</a>
+        <a href="fuerza.html">Fuerza</a>
+        <a href="cardio.html">Cardio</a>
+        <a href="flexibilidad.html">Flexibilidad</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="zonas.html">Zonas</a>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="recuperacion.html">Recuperación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 
     <section class="container">
         <h2>¿Tienes preguntas o sugerencias?</h2>
@@ -79,12 +110,11 @@
             <button type="submit" class="button">Enviar Mensaje</button>
         </form>
 
-        <br>
-        <a href="inicio.html" class="button">Volver a Inicio</a>
+        <p><a href="inicio.html" class="button">Volver al Inicio</a></p>
     </section>
-
+    
     <footer>
-        <p></p>
+        <p>Guía de entrenamiento en casa</p>
     </footer>
 </body>
 </html>

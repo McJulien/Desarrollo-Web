@@ -11,11 +11,26 @@
             padding: 0;
             background-color: #ffe5e5;
             text-align: center;
+            color: #333;
         }
         header, footer {
-            background-color: #b30000;
+            background-color: #a40000;
             color: white;
             padding: 15px;
+        }
+        nav {
+            background:#e00000;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
         }
         .container {
             padding: 20px;
@@ -37,14 +52,17 @@
             margin: 10px auto;
             border-radius: 10px;
         }
-        h2 {
-            color: #222;
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
         }
         .button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
-            background: #b30000;
+            background: #e00000;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -52,7 +70,7 @@
             transition: background 0.3s;
         }
         .button:hover {
-            background: #444;
+            background: #a40000;
         }
     </style>
 </head>
@@ -60,6 +78,19 @@
     <header>
         <h1>Entrenamiento por Zonas</h1>
     </header>
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="calentamiento.html">Calentamiento</a>
+        <a href="fuerza.html">Fuerza</a>
+        <a href="cardio.html">Cardio</a>
+        <a href="flexibilidad.html">Flexibilidad</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="zonas.html">Zonas</a>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="recuperacion.html">Recuperación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
     
     <section class="container">
         <h2>Selecciona tu zona de entrenamiento</h2>
@@ -125,12 +156,11 @@
             </ul>
         </div>
 
-        <br>
         <a href="inicio.html" class="button">Volver al Inicio</a>
     </section>
     
     <footer>
-        <p></p>
+        <p>Guía de entrenamiento en casa</p>
     </footer>
 </body>
 </html>

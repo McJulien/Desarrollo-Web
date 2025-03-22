@@ -14,18 +14,43 @@
             color: #333;
         }
         header, footer {
-            background-color: #00838f;
+            background-color: #006872;
             color: white;
             padding: 15px;
         }
+        nav {
+            background:#0097a7;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
+        }
         .container {
             padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
         }
         .image-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
+            margin-top: 20px;
         }
         .image-container img {
             width: 250px;
@@ -36,7 +61,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
-            background: #006064;
+            background: #0097a7;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -44,7 +69,7 @@
             transition: background 0.3s;
         }
         .button:hover {
-            background: #004d40;
+            background: #006872;
         }
     </style>
 </head>
@@ -52,7 +77,20 @@
     <header>
         <h1>Flexibilidad y Movilidad</h1>
     </header>
-    
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="calentamiento.html">Calentamiento</a>
+        <a href="fuerza.html">Fuerza</a>
+        <a href="cardio.html">Cardio</a>
+        <a href="flexibilidad.html">Flexibilidad</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="zonas.html">Zonas</a>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="recuperacion.html">Recuperación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
     <section class="container">
         <h2>Ejercicios de Flexibilidad y Movilidad</h2>
         <p>La flexibilidad y la movilidad son esenciales para prevenir lesiones y mejorar el rendimiento deportivo.</p>
@@ -72,12 +110,11 @@
             <img src="Archivos/Estiramiento3.png" alt="Rotación de cadera">
         </div>
 
-        <br>
         <a href="inicio.html" class="button">Volver al Inicio</a>
     </section>
-    
+
     <footer>
-        <p></p>
+        <p>Guía de entrenamiento en casa</p>
     </footer>
 </body>
 </html>

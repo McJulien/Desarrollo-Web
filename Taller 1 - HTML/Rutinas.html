@@ -14,18 +14,29 @@
             color: #333;
         }
         header, footer {
-            background-color: #689f38;
+            background-color: #5b8b31;
             color: white;
             padding: 15px;
+        }
+        nav {
+            background:#8bc34a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
         }
         .container {
             padding: 20px;
             max-width: 800px;
             margin: auto;
             text-align: left;
-        }
-        h2 {
-            color: #33691e;
         }
         .nivel {
             background: white;
@@ -34,11 +45,17 @@
             margin-bottom: 20px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
         }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
+        }
         .button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
-            background: #558b2f;
+            background: #8bc34a;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -46,7 +63,7 @@
             transition: background 0.3s;
         }
         .button:hover {
-            background: #33691e;
+            background: #5b8b31;
         }
     </style>
 </head>
@@ -54,7 +71,20 @@
     <header>
         <h1>Rutinas por Niveles</h1>
     </header>
-    
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="calentamiento.html">Calentamiento</a>
+        <a href="fuerza.html">Fuerza</a>
+        <a href="cardio.html">Cardio</a>
+        <a href="flexibilidad.html">Flexibilidad</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="zonas.html">Zonas</a>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="recuperacion.html">Recuperación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
     <section class="container">
         <h2>Encuentra la rutina adecuada para ti</h2>
         <p>Selecciona la rutina según tu nivel de experiencia y condición física.</p>
@@ -94,12 +124,11 @@
             </ul>
         </div>
 
-        <br>
         <a href="inicio.html" class="button">Volver al Inicio</a>
     </section>
-    
+
     <footer>
-        <p></p>
+        <p>Guía de entrenamiento en casa</p>
     </footer>
 </body>
 </html>

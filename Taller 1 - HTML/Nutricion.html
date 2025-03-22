@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #eef2f3;
-            text-align: left;
+            color: #333;
         }
         header, footer {
             background-color: #444;
@@ -18,15 +18,38 @@
             text-align: center;
             padding: 15px;
         }
+        nav {
+            background: #666;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #333;
+        }
         .container {
+            padding: 20px;
             max-width: 800px;
             margin: auto;
+            padding: left;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 10px 0;
         }
         .button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 15px;
-            background: #444;
+            background: #666;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -42,6 +65,19 @@
     <header>
         <h1>Nutrición para Deportistas</h1>
     </header>
+    
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="calentamiento.html">Calentamiento</a>
+        <a href="fuerza.html">Fuerza</a>
+        <a href="cardio.html">Cardio</a>
+        <a href="flexibilidad.html">Flexibilidad</a>
+        <a href="rutinas.html">Rutinas</a>
+        <a href="zonas.html">Zonas</a>
+        <a href="nutricion.html">Nutrición</a>
+        <a href="recuperacion.html">Recuperación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 
     <section class="container">
         <h2>Importancia de una buena alimentación</h2>
@@ -70,9 +106,9 @@
 
         <p><a href="inicio.html" class="button">Volver al Inicio</a></p>
     </section>
-
+    
     <footer>
-        <p></p>
+        <p>Guía de entrenamiento en casa</p>
     </footer>
 </body>
 </html>
